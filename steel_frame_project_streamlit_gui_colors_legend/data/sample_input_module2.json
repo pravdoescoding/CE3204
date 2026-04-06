@@ -1,0 +1,73 @@
+{
+  "num_storeys": 5,
+  "beam_span_m": 4.0,
+  "design_standard": "Euro",
+  "storeys": [
+    {
+      "storey": 1,
+      "height_m": 5.0,
+      "dead_load_kn_per_m": 3.0,
+      "live_load_kn_per_m": 2.0
+    },
+    {
+      "storey": 2,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0
+    },
+    {
+      "storey": 3,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0
+    },
+    {
+      "storey": 4,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0
+    },
+    {
+      "storey": 5,
+      "height_m": 1.0,
+      "dead_load_kn_per_m": 2.0,
+      "live_load_kn_per_m": 1.0
+    }
+  ],
+  "constraints": {
+    "utilization_min": 0.5,
+    "utilization_max": 0.7,
+    "beam_same_groups": [
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "column_same_groups": [
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "allowed_steel_grades": [
+      "S235",
+      "S275",
+      "S355"
+    ],
+    "beam_allowed_shapes": [
+      "I Section"
+    ],
+    "column_allowed_shapes": [
+      "Circular Hollow Section",
+      "Square Hollow Section"
+    ],
+    "column_max_section_class_by_storey": {
+      "1": 2,
+      "2": 2,
+      "3": 2
+    }
+  }
+}

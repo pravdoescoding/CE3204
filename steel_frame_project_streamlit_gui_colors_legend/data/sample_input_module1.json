@@ -1,0 +1,57 @@
+{
+  "num_storeys": 5,
+  "beam_span_m": 4.0,
+  "design_standard": "Euro",
+  "storeys": [
+    {
+      "storey": 1,
+      "height_m": 5.0,
+      "dead_load_kn_per_m": 3.0,
+      "live_load_kn_per_m": 2.0,
+      "beam_section": "UB254x102x28",
+      "beam_grade": "S275",
+      "column_section": "SHS 80 / 6.3",
+      "column_grade": "S355"
+    },
+    {
+      "storey": 2,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0,
+      "beam_section": "UB305x102x33",
+      "beam_grade": "S275",
+      "column_section": "SHS 80 / 6.3",
+      "column_grade": "S275"
+    },
+    {
+      "storey": 3,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0,
+      "beam_section": "UB305x102x33",
+      "beam_grade": "S275",
+      "column_section": "SHS 80 / 6.3",
+      "column_grade": "S275"
+    },
+    {
+      "storey": 4,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0,
+      "beam_section": "UB305x102x33",
+      "beam_grade": "S275",
+      "column_section": "SHS 80 / 6.3",
+      "column_grade": "S275"
+    },
+    {
+      "storey": 5,
+      "height_m": 1.0,
+      "dead_load_kn_per_m": 2.0,
+      "live_load_kn_per_m": 1.0,
+      "beam_section": "UB152x89x16",
+      "beam_grade": "S275",
+      "column_section": "SHS 25 / 2.5",
+      "column_grade": "S235"
+    }
+  ]
+}

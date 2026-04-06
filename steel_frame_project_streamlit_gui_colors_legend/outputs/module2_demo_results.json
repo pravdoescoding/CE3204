@@ -1,0 +1,208 @@
+{
+  "feasible": true,
+  "input": {
+    "num_storeys": 5,
+    "beam_span_m": 4.0,
+    "design_standard": "Euro",
+    "storeys": [
+      {
+        "storey": 1,
+        "height_m": 5.0,
+        "dead_load_kn_per_m": 3.0,
+        "live_load_kn_per_m": 2.0
+      },
+      {
+        "storey": 2,
+        "height_m": 3.0,
+        "dead_load_kn_per_m": 8.0,
+        "live_load_kn_per_m": 6.0
+      },
+      {
+        "storey": 3,
+        "height_m": 3.0,
+        "dead_load_kn_per_m": 8.0,
+        "live_load_kn_per_m": 6.0
+      },
+      {
+        "storey": 4,
+        "height_m": 3.0,
+        "dead_load_kn_per_m": 8.0,
+        "live_load_kn_per_m": 6.0
+      },
+      {
+        "storey": 5,
+        "height_m": 1.0,
+        "dead_load_kn_per_m": 2.0,
+        "live_load_kn_per_m": 1.0
+      }
+    ],
+    "constraints": {
+      "utilization_min": 0.15,
+      "utilization_max": 0.7,
+      "beam_same_groups": [
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "column_same_groups": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "allowed_steel_grades": [
+        "S235",
+        "S275",
+        "S355"
+      ],
+      "beam_allowed_shapes": [
+        "I Section"
+      ],
+      "column_allowed_shapes": [
+        "Circular Hollow Section",
+        "Square Hollow Section"
+      ],
+      "beam_max_section_class_by_storey": {},
+      "column_max_section_class_by_storey": {
+        "1": 2,
+        "2": 2,
+        "3": 2
+      }
+    }
+  },
+  "design_standard": {
+    "code": "EURO",
+    "alpha": 1.35,
+    "beta": 1.5
+  },
+  "actions": {
+    "design_loads_kn_per_m": [
+      7.050000000000001,
+      19.8,
+      19.8,
+      19.8,
+      4.2
+    ],
+    "beam_mmax_knm": [
+      9.4,
+      26.400000000000002,
+      26.400000000000002,
+      26.400000000000002,
+      5.6000000000000005
+    ],
+    "column_total_load_kn": [
+      141.29999999999998,
+      127.19999999999999,
+      87.6,
+      48.0,
+      8.4
+    ]
+  },
+  "results_by_storey": [
+    {
+      "storey": 1,
+      "height_m": 5.0,
+      "dead_load_kn_per_m": 3.0,
+      "live_load_kn_per_m": 2.0,
+      "design_load_kn_per_m": 7.050000000000001,
+      "beam_section": "IPE120",
+      "beam_shape": "I Section",
+      "beam_grade": "S275",
+      "beam_section_class": 1,
+      "beam_utilization_ratio": 0.6454270804723977,
+      "beam_cost_sgd": 38.688,
+      "column_section": "CHS 60.3/3.2",
+      "column_shape": "Circular Hollow Section",
+      "column_grade": "S355",
+      "column_section_class": 1,
+      "column_utilization_ratio": 0.6934288658781959,
+      "column_cost_total_sgd": 44.648999999999994,
+      "storey_total_cost_sgd": 83.33699999999999
+    },
+    {
+      "storey": 2,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0,
+      "design_load_kn_per_m": 19.8,
+      "beam_section": "IPE160",
+      "beam_shape": "I Section",
+      "beam_grade": "S355",
+      "beam_section_class": 1,
+      "beam_utilization_ratio": 0.6841416484185704,
+      "beam_cost_sgd": 62.568000000000005,
+      "column_section": "CHS 60.3/3.2",
+      "column_shape": "Circular Hollow Section",
+      "column_grade": "S355",
+      "column_section_class": 1,
+      "column_utilization_ratio": 0.6242332041026647,
+      "column_cost_total_sgd": 26.789399999999997,
+      "storey_total_cost_sgd": 89.3574
+    },
+    {
+      "storey": 3,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0,
+      "design_load_kn_per_m": 19.8,
+      "beam_section": "IPE160",
+      "beam_shape": "I Section",
+      "beam_grade": "S355",
+      "beam_section_class": 1,
+      "beam_utilization_ratio": 0.6841416484185704,
+      "beam_cost_sgd": 62.568000000000005,
+      "column_section": "CHS 60.3/3.2",
+      "column_shape": "Circular Hollow Section",
+      "column_grade": "S355",
+      "column_section_class": 1,
+      "column_utilization_ratio": 0.42989645188202386,
+      "column_cost_total_sgd": 26.789399999999997,
+      "storey_total_cost_sgd": 89.3574
+    },
+    {
+      "storey": 4,
+      "height_m": 3.0,
+      "dead_load_kn_per_m": 8.0,
+      "live_load_kn_per_m": 6.0,
+      "design_load_kn_per_m": 19.8,
+      "beam_section": "IPE160",
+      "beam_shape": "I Section",
+      "beam_grade": "S355",
+      "beam_section_class": 1,
+      "beam_utilization_ratio": 0.6841416484185704,
+      "beam_cost_sgd": 62.568000000000005,
+      "column_section": "CHS 60.3/3.2",
+      "column_shape": "Circular Hollow Section",
+      "column_grade": "S355",
+      "column_section_class": 1,
+      "column_utilization_ratio": 0.2355596996613829,
+      "column_cost_total_sgd": 26.789399999999997,
+      "storey_total_cost_sgd": 89.3574
+    },
+    {
+      "storey": 5,
+      "height_m": 1.0,
+      "dead_load_kn_per_m": 2.0,
+      "live_load_kn_per_m": 1.0,
+      "design_load_kn_per_m": 4.2,
+      "beam_section": "IPE100",
+      "beam_shape": "I Section",
+      "beam_grade": "S235",
+      "beam_section_class": 1,
+      "beam_utilization_ratio": 0.6967774045041684,
+      "beam_cost_sgd": 28.512,
+      "column_section": "CHS 21.3/2",
+      "column_shape": "Circular Hollow Section",
+      "column_grade": "S235",
+      "column_section_class": 1,
+      "column_utilization_ratio": 0.2954105855459821,
+      "column_cost_total_sgd": 1.672,
+      "storey_total_cost_sgd": 30.184
+    }
+  ],
+  "total_cost_sgd": 381.59319999999997
+}
