@@ -5,7 +5,7 @@ Steel Frame Analysis & Optimization Tool
 ---
 
 ## 🌐 Live App
-https://steelframeanalysis.streamlit.app
+https://steelframe.streamlit.app
 
 ---
 
